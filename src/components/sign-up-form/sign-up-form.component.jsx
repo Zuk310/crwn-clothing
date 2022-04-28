@@ -10,7 +10,7 @@ import {
 
 // import { UserContext } from "../../contexts/user.context";
 
-import './sign-up-form.styles.scss';
+import { SignUpContainer } from './sign-up-form.styles';
 
 
 const defaultFormFields = {
@@ -62,7 +62,7 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="sign-up-container">
+    <SignUpContainer>
         <h2>Don't have an account yet?</h2>
       <span>sign up with email and password</span>
 
@@ -105,7 +105,7 @@ const SignUpForm = () => {
 
         <Button type="submit">Sign up</Button>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 
